@@ -1,38 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Manjari:wght@400;700&family=Open+Sans&display=swap');
+
+body {
+  margin: 0;
+}
+
 .App {
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+}
+
+.mobilewebwrapper {
+  max-width: 768px;
+  background-color: white;
+}
+
+.headercontainer {
+  position: relative;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header-background {
+  width: 100vw;
+  max-width: 100%;
+  max-height: 150px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.logo {
+  color: #FFF;
+  text-align: center;
+  font-family: Manjari;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 4px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.logotexthighlight {
+  color: #9B2929;
+}
+
+.navbar {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  width: 100vw;
+  justify-content: space-around;
+  max-width: 100%;
+}
+
+.links {
+  color: #FFF;
+  text-align: center;
+  font-family: Manjari;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  display: flex;
+  width: 50vw;
+  justify-content: space-between;
+  max-width: 200px;
+}
+
+.homepage {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding-top: 25px;
+  height: 75%
 }
 
-.App-link {
-  color: #61dafb;
+.intro-title {
+  color: #000;
+  font-family: Manjari;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
+  text-align: center;
+  padding: 0 5vw;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.intro-text {
+  color: #000;
+  font-family: Manjari;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: center;
+  padding: 20px 5vw;
+}
+
+.hero-image {
+  max-width: 400px;
+  margin: auto;
 }
