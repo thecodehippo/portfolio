@@ -2,6 +2,7 @@ import './App.css';
 import { Header } from './components/Header';
 import { Home } from './components/Home';
 import { useState } from 'react';
+import { Playground } from './components/Playground';
 
 function App() {
 
@@ -16,7 +17,7 @@ function App() {
     <div className="App">
         <div className="mobilewebwrapper">
           <Header  changePage={changePage} />
-          {page === 'home' ? <Home /> : 'page'}
+          {page === 'home' ? <Home /> : <Playground />}
         </div>
     </div>
   );
